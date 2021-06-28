@@ -1,7 +1,7 @@
 import Web3 from 'web3';
 
 const web3 = new Web3(
-  new Web3.providers.HttpProvider('https://localhost:8545')
+  new Web3.providers.HttpProvider('http://localhost:8545')
 );
 
 let greeterABI = [
@@ -34,7 +34,8 @@ let greeterABI = [
   },
 ];
 
-let greeterAddress = '0xc00d9f1bE67084Cd99bEc6Fe56C326965079b745';
+let greeterAddress = '0x4DbA0268e632ea33d7a78A8aD3A82c9d6F4CB99c';
 const greeterContract = web3.eth.contract(greeterABI).at(greeterAddress);
+console.log("efwertretrtrwetwer");
 
 export { greeterContract };
